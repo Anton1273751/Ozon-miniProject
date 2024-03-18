@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  &__logo {
+    width: 156px;
+    height: 28px;
+    left: 335px;
+    right: 1429px;
+    top: 14px;
+    bottom: 822px;
+  }
+  &__btn-catalog {
+    width: 118px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 3px;
+    justify-content: space-between;
+    background: rgb(0, 91, 255);
+    /* Текст */
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+  }
+  &__input {
+    width: 777px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 18px;
+    border: 2px solid rgb(0, 91, 255);
+    border-radius: 3px 0px 0px 3px;
+  }
+  &__btn-search {
+    width: 76px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0, 91, 255);
+    border-radius: 0px 3px 3px 0px;
+  }
+  .basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 26px;
+
+    &__counter {
+      //   position: absolute;
+      right: 155px;
+      width: 22.69px;
+      height: 16px;
+      border-radius: 8px;
+      text-align: center;
+
+      background: rgb(249, 17, 85);
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+    &__img {
+      /* Vector */
+      width: 22.27px;
+      height: 20px;
+    }
+    &__text {
+      width: 53.53px;
+      height: 18px;
+      margin-top: 2px;
+      color: rgb(0, 26, 52);
+      font-family: Arial;
+    }
+  }
+}
