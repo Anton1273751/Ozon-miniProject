@@ -16,9 +16,13 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1380px;
+  max-width: 1200px;
 
   margin: 0 auto;
   box-sizing: content-box;
   padding: 0 24px;
+}
+
+main {
+  display: flex;
 }

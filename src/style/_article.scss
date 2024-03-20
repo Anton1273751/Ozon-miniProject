@@ -1,0 +1,56 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: center;
+  gap: 2px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  max-width: 252px;
+  max-height: 399px;
+  border: 1px solid rgb(237, 237, 237);
+  background: rgb(255, 255, 255);
+  &__img {
+    padding: 15px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__info {
+    padding: 20px;
+  }
+  &__price {
+    color: rgb(33, 37, 41);
+    font-family: Arial;
+    font-size: 21.48px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+    text-align: left;
+  }
+  &__text {
+    color: rgb(33, 37, 41);
+    font-family: Arial;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__btn {
+    width: 209px;
+    height: 32px;
+    margin-top: 12px;
+    border: 2px solid rgb(0, 91, 255);
+    border-radius: 2px;
+    background: rgb(0, 91, 255);
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 13.23px;
+    font-weight: 700;
+    line-height: 16.38px;
+    text-align: center;
+  }
+}

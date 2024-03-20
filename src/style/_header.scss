@@ -11,11 +11,15 @@
     bottom: 822px;
   }
   &__btn-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     width: 118px;
     height: 40px;
+    padding: 13px;
     margin-left: 15px;
     border-radius: 3px;
-    justify-content: space-between;
     background: rgb(0, 91, 255);
     /* Текст */
     color: rgb(255, 255, 255);
@@ -23,7 +27,6 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
-    text-align: center;
   }
   &__input {
     width: 777px;
@@ -45,13 +48,16 @@
   }
   .basket {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     margin-left: 26px;
 
     &__counter {
-      //   position: absolute;
-      right: 155px;
+      position: absolute;
+      left: 40px;
+      bottom: 32px;
       width: 22.69px;
       height: 16px;
       border-radius: 8px;
