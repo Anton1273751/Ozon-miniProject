@@ -10,30 +10,13 @@
     top: 14px;
     bottom: 822px;
   }
-  &__btn-catalog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    width: 118px;
-    height: 40px;
-    padding: 13px;
-    margin-left: 15px;
-    border-radius: 3px;
-    background: rgb(0, 91, 255);
-    /* Текст */
-    color: rgb(255, 255, 255);
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-  }
+
   &__input {
     width: 777px;
     height: 40px;
     padding: 10px;
     margin-left: 18px;
-    border: 2px solid rgb(0, 91, 255);
+    border: 2px solid var(--accent-color);
     border-radius: 3px 0px 0px 3px;
   }
   &__btn-search {
@@ -43,7 +26,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(0, 91, 255);
+    background: var(--accent-color);
     border-radius: 0px 3px 3px 0px;
   }
   .basket {
@@ -66,13 +49,11 @@
       background: rgb(249, 17, 85);
       color: rgb(255, 255, 255);
       font-family: Arial;
-
       font-size: 12px;
       font-weight: 700;
       line-height: 16px;
     }
     &__img {
-      /* Vector */
       width: 22.27px;
       height: 20px;
     }

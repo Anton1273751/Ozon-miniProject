@@ -1,0 +1,14 @@
+@mixin cards-btn {
+  width: 209px;
+  height: 32px;
+  margin-top: 12px;
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background: var(--accent-color);
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 13.23px;
+  font-weight: 700;
+  line-height: 16.38px;
+  text-align: center;
+}

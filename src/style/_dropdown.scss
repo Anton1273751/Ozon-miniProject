@@ -1,0 +1,50 @@
+.dropdown {
+  position: relative;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 118px;
+    height: 40px;
+    padding: 13px;
+    margin-left: 15px;
+    border-radius: 3px;
+    background: var(--accent-color);
+    /* Текст */
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    flex-direction: column;
+    gap: 17px;
+    left: 15px;
+    max-width: 183px;
+    max-height: 128px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+  }
+
+  &__link {
+    width: 144px;
+    height: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+  }
+}
+.dropdown:hover .dropdown__content {
+  display: flex;
+}
