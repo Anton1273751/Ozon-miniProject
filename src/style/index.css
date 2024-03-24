@@ -111,7 +111,7 @@ html {
 }
 
 :root {
-  --accent-color: rgb(0, 89, 255);
+  --accent-color: rgb(0, 94, 255);
 }
 
 .btn {
@@ -270,21 +270,20 @@ main {
 .article {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
   cursor: pointer;
-  max-width: 252px;
-  max-height: 399px;
   border: 1px solid rgb(237, 237, 237);
   background: rgb(255, 255, 255);
 }
 .article__img {
-  padding: 15px;
+  max-width: 200px;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-.article__info {
-  padding: 20px;
 }
 .article__price {
   color: rgb(33, 37, 41);
@@ -303,7 +302,6 @@ main {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
-  text-align: left;
 }
 .article__btn {
   width: 209px;

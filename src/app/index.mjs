@@ -4,8 +4,9 @@ import { goods } from "./db.mjs";
 // console.log(consoles);
 
 const wrapperNode = document.querySelector(".wrapper");
+const inputNode = document.querySelector(".header__input");
 
-const createCards = ({ name, price, img }) => {
+const createCards = ({ title, price, img }) => {
   const articleNode = document.createElement("article");
   articleNode.className = "article";
   articleNode.innerHTML = `<img
@@ -14,8 +15,8 @@ const createCards = ({ name, price, img }) => {
                 alt="#"
               />
               <div class="article__info">
-                <h3 class="article__price">${price}</h3>
-                <p class="article__text">${name}
+                <h3 class="article__price">${price} ₽</h3>
+                <p class="article__text">${title}
                 </p>
                 <button class="article__btn">В корзину</button>
               </div>`;
@@ -24,10 +25,18 @@ const createCards = ({ name, price, img }) => {
 };
 
 const renderCards = (consoles) => {
+  wrapperNode.innerHTML = "";
   consoles.forEach((element) => {
     wrapperNode.append(createCards(element));
   });
 };
 
-renderCards(consoles);
-console.log(goods);
+inputNode.addEventListener("input", (e) => {
+  const value = e.target.value;
+  const filterCard = goods.filter(({ title }) =>
+    title.toLowerCase().includes(value.toLowerCase())
+  );
+  renderCards(filterCard);
+});
+
+renderCards(goods);
