@@ -1,7 +1,6 @@
 import { consoles } from "./test.mjs";
 import { goods } from "./db.mjs";
 
-// console.log(consoles);
 
 const wrapperNode = document.querySelector(".wrapper");
 const inputNode = document.querySelector(".header__input");
@@ -9,11 +8,11 @@ const inputNode = document.querySelector(".header__input");
 const createCards = ({ title, price, img }) => {
   const articleNode = document.createElement("article");
   articleNode.className = "article";
-  articleNode.innerHTML = `<img
+  articleNode.innerHTML = `<div class="article__wrap-img"><img
                 class="article__img"
                 src=${img}
                 alt="#"
-              />
+              /></div>
               <div class="article__info">
                 <h3 class="article__price">${price} ₽</h3>
                 <p class="article__text">${title}

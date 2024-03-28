@@ -270,12 +270,16 @@ main {
 .article {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   cursor: pointer;
   border: 1px solid rgb(237, 237, 237);
   background: rgb(255, 255, 255);
+}
+.article__wrap-img {
+  height: 100%;
+  align-content: center;
 }
 .article__img {
   max-width: 200px;
@@ -302,6 +306,8 @@ main {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .article__btn {
   width: 209px;
