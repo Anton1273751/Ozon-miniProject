@@ -1,9 +1,11 @@
-import { consoles } from "./test.mjs";
 import { goods } from "./db.mjs";
-
 
 const wrapperNode = document.querySelector(".wrapper");
 const inputNode = document.querySelector(".header__input");
+const linkCatalogNode = document.querySelector(".dropdown__content");
+const catalogItems = document.querySelectorAll(".dropdown__link");
+// console.log(linkCatalogNode);
+// console.log(catalogItams);
 
 const createCards = ({ title, price, img }) => {
   const articleNode = document.createElement("article");
@@ -36,6 +38,28 @@ inputNode.addEventListener("input", (e) => {
     title.toLowerCase().includes(value.toLowerCase())
   );
   renderCards(filterCard);
+});
+
+linkCatalogNode.addEventListener("click", (e) => {
+  const consoles = goods.filter((element) => {
+    return element.category === "Игровая приставка";
+  });
+  const pc = goods.filter((element) => {
+    return element.category === "Периферия для ПК";
+  });
+
+  const gamesSoft = goods.filter((element) => {
+    return element.category === "Игры и софт";
+  });
+  const id = e.target.id;
+  switch (id) {
+    case "PC":
+      return renderCards(pc);
+    case "Games":
+      return renderCards(gamesSoft);
+    case "Consoles":
+      return renderCards(consoles);
+  }
 });
 
 renderCards(goods);
